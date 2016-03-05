@@ -28,6 +28,9 @@ import android.widget.TextView;
  * buttons on the bottom of the screen
  *
  * Enhancements (Part B):
+ * [20 Points] The paddle can be moved in both the X and Y direction, and the ball's speed is increased
+ * if the paddle is moved towards it when it impacts.
+ * [5 Points] The bouncing has a small amount of randomness in it.
  *
  */
 public class MainActivity extends Activity {
@@ -50,6 +53,13 @@ public class MainActivity extends Activity {
         expertButton.setOnClickListener(pong);
         beginnerButton.setOnClickListener(pong);
         //lock screen to landscape mode
+        /**
+         External Citation
+         Date: 3/4/2016
+         Problem: I didn't remember how to lock the screen orientation to landscape
+         Resource: Example from lecture on Doodads
+         Solution: I looked at how Nuxoll did it in the lecture via the code posted on Moodle.
+         */
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 }

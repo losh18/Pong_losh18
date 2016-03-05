@@ -85,7 +85,7 @@ public class PongBall {
      */
     public boolean intersects(float left, float top, float right, float bottom){
         if (x + radius >= left && x - radius <= right ){
-            if (y + radius >= top && x - radius <= bottom){
+            if (y + radius >= top && y - radius <= bottom){
                 return true;
             }
         }
